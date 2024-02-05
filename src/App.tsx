@@ -1,13 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Splash from "./components/Splash";
-import Credentials from "./components/Credentials";
-import Dashboard from "./components/Dashboard";
-import { NearbyPeople } from "./components/NearbyPeople";
-import { PostJobs } from "./components/PostJobs";
-import { Messages } from "./components/Messages";
-import { UserProfile } from "./components/UserProfile";
-import { Notification } from "./components/Notification";
-import { MyNetworks } from "./components/MyNetworks";
+import Splash from "./components/screens/Splash";
+import Credentials from "./components/screens/Credentials";
+import Dashboard from "./components/screens/Dashboard";
+import { NearbyPeople } from "./components/screens/NearbyPeople";
+import { PostJobs } from "./components/screens/PostJobs";
+import { Messages } from "./components/screens/Messages";
+import { UserProfile } from "./components/screens/UserProfile";
+import { Notification } from "./components/screens/Notification";
+import { MyNetworks } from "./components/screens/MyNetworks";
+import { JobDetails } from "./components/screens/JobDetails";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path="user-profile" element = {<UserProfile/>}/>
         <Route path="notifications" element = {<Notification/>}/>
         <Route path="my-networks" element={<MyNetworks/>}/>
-        
+        <Route path = "job-details/:organization" element = {<JobDetails/>}/>
+
       </Routes>
     </BrowserRouter>
   );

@@ -10,11 +10,11 @@ import Avatar from "@mui/material/Avatar";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import MapsUgcOutlinedIcon from '@mui/icons-material/MapsUgcOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 
 interface FeedCardProps {
   feed_img: string;
@@ -75,7 +75,7 @@ export const FeedCard: React.FC<FeedCardProps> = ({
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <FavoriteBorderOutlinedIcon />
         </IconButton>
         <IconButton aria-label="comments">
           <MapsUgcOutlinedIcon />

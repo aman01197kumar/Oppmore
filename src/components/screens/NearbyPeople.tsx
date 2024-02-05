@@ -1,7 +1,7 @@
-import { peopleNearMe } from "../assets/Data/peopleNearMe"
-import { Footer } from "./Footer"
-import { Header } from "./Header"
-import ProfileCard from "./ProfileCard"
+import { peopleNearMe } from "../../assets/Data/peopleNearMe"
+import { Footer } from "../Footer"
+import { Header } from "../Header"
+import ProfileCard from "../ProfileCard"
 
 export const NearbyPeople = ()=>{
     return(
@@ -13,12 +13,12 @@ export const NearbyPeople = ()=>{
           {peopleNearMe?.map((item, index) => (
             <ProfileCard
               key={index}
-              name={item.name}
               organization={item.organization}
               job_desc={item.job_desc}
-              currently_hiring={item.currently_hiring}
               profile={item.profile}
+              website = {item.website}
             />
+            
           ))}
         </div>
       </div>

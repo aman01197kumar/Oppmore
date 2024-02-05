@@ -54,16 +54,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export const Header = () => {
   const navigate = useNavigate();
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box className="position-fixed fixed-top">
       <AppBar position="static">
         <Toolbar>
           <Typography
             variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
           >
-            MUI
+            logo
           </Typography>
           <Search>
             <SearchIconWrapper>

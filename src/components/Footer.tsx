@@ -27,6 +27,7 @@ export const Footer = () => {
         icon={<AddBoxIcon fontSize="large" />}
         onClick={() => navigate("/post-jobs")}
       />
+      
       <BottomNavigationAction
         label="MailIcon"
         icon={<MailIcon fontSize="large" />}

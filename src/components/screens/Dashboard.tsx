@@ -1,7 +1,7 @@
-import { feeds } from "../assets/Data/feeds";
-import { FeedCard } from "./FeedCard";
-import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { feeds } from "../../assets/Data/feeds";
+import { FeedCard } from "../FeedCard";
+import { Footer } from "../Footer";
+import { Header } from "../Header";
 
 const Dashboard = () => {
   return (
